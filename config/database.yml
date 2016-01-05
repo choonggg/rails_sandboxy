@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: sandbox_development
+
+test:
+  <<: *default
+  database: sandbox_test
+
+production:
+  <<: *default
+  database: sandbox_production
+  username: bla
+  password: bla
