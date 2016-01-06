@@ -18,8 +18,7 @@ gem 'title'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'responders'
 gem 'puma'
-gem 'quiet_assets'
-gem 'rubocop', require: false
+gem 'cocoon'
 
 
 group :development, :test do
@@ -27,6 +26,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'byebug'
   gem 'better_errors'
+  gem 'quiet_assets'
+  gem 'rubocop', require: false
 end
 
 # Use Capistrano for deployment

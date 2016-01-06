@@ -1,0 +1,6 @@
+.nested-fields
+  = f.input :field_type, collection: %w[text_field check_box]
+  = f.input :name, placeholder: 'Field name'
+  = f.input :required
+  = link_to_remove_association "remove task", f
+  hr

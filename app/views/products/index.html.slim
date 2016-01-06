@@ -1,0 +1,12 @@
+.container
+  .row
+    .col-md-3
+      h6 &nbsp;
+      ul.list-group
+        li.list-group-item = link_to 'Create a product', new_product_path
+        li.list-group-item = link_to 'Product Types', product_types_path
+    .col-md-9
+      h1 Products &nbsp;
+      - @products.each do |p|
+        h6 #{p.name} - #{p.price}
+        hr
