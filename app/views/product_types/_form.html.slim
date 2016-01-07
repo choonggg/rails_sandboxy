@@ -1,17 +1,12 @@
-= simple_form_for(@product_type) do |f|
+= simple_form_for @product_type, html: { class: 'form-horizontal' }, wrapper: :horizontal_form do |f|
 
-  .form-inputs
-    = f.input :name
+  = f.input :name
 
   hr
   
-  .nested-fields 
-    = f.simple_fields_for :fields do |builder|
-      = render 'field_fields', f: builder
-    .links
-      = link_to_add_association "Add Field", f, :fields
+  = f.simple_fields_for :fields do |builder|
+    = render 'field_fields', f: builder
+  .links
+    = link_to_add_association "Add Field", f, :fields
   
-  hr
-
-  .form-actions
-    = f.button :submit
+  = f.button :submit
