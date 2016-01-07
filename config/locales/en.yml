@@ -21,7 +21,3 @@
 
 en:
   hello: "Hello world"
-  titles:
-    application: Sandbox bro
-    records: 
-      index: Money app

@@ -1,6 +1,18 @@
-h1 = @product_type.name
+.container
+  .row
+    .col-md-12
+      h1 = @product_type.name
 
-- @product_type.fields.each do |f|
-  p = f.name
-  p = f.field_type
-  
+  .row
+    .col-md-12
+      table.table
+        thead
+          tr
+            td Bla
+            td Bla
+
+        tbody
+          - @product_type.fields.each do |f|
+            tr
+              td = f.name
+              td = f.field_type

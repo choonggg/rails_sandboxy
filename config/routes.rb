@@ -5,4 +5,8 @@ Rails.application.routes.draw do
 
   resources :product_types
   resources :products
+
+  namespace :api, :defaults => { :format => :json } do
+    resources :records
+  end
 end

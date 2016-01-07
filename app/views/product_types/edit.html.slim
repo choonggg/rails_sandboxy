@@ -1,11 +1,15 @@
 .container
   .row
-    .col-md-12
+    .col-md-6
       h1 Editing product_type
+      p This is where you set shit
+    .col-md-6
 
-      == render 'form'
+      .panel.panel-default
+        .panel-body
+          == render 'form'
 
-      = link_to 'Show', @product_type
-      '|
-      = link_to 'Back', product_types_path
+          = link_to 'Show', @product_type
+          '|
+          = link_to 'Back', product_types_path
 
