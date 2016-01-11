@@ -19,6 +19,7 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'responders'
 gem 'puma'
 gem 'cocoon'
+gem "paperclip", "~> 4.3"
 
 
 group :development, :test do
