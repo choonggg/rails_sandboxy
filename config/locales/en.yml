@@ -21,3 +21,9 @@
 
 en:
   hello: "Hello world"
+  titles:
+    application: "Sandbox!"
+    records:
+      index: "React Money"
+    products:
+      index: "Dynamo Forms"
