@@ -4,3 +4,13 @@
       h2 Recipes
       hr
       = link_to "New Recipe", new_recipe_path
+      hr
+
+      table.table
+        tbody
+          - @recipes.each do |r|
+            tr
+              td = r.title
+              td = r.description
+              td = image_tag(r.image, class: 'img-responsive')
+

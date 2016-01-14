@@ -6,4 +6,7 @@
       = simple_form_for @recipe do |f|
         = f.input :title
         = f.input :description
+        .panel.panel-default
+          .panel-body
+            = f.file_field :image
         = f.submit 'Submit', class: 'btn btn-primary'
