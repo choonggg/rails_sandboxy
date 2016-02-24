@@ -20,6 +20,7 @@ gem 'responders'
 gem 'puma'
 gem 'cocoon'
 gem "paperclip", "~> 4.3"
+gem 'devise', git: 'git@github.com:plataformatec/devise.git'
 
 
 group :development, :test do

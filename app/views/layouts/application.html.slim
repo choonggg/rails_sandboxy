@@ -9,6 +9,8 @@ html
     meta content="width=device-width, initial-scale=1.0" name="viewport" /
 
   body class="#{controller_name.gsub('-','_')} #{action_name}"
+    p.notice = notice
+    p.alert = alert
     header
       = render 'layouts/navigation'
     = yield
